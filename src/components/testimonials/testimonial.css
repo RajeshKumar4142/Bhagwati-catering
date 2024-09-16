@@ -1,0 +1,126 @@
+/* Container for review-section */
+.review-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #ffe0e0;
+    padding: 2rem;
+    border-radius: 12px;
+    flex-wrap: wrap; /* Allow wrapping */
+    position: relative; /* Use relative positioning */
+    margin-bottom: 2rem; /* Add margin to avoid overlap */
+    z-index: 2; /* green box will be above black box */
+    top: -39px;
+}
+
+/* Box containing each review */
+.review-box {
+    text-align: center;
+    padding: 1rem;
+    flex: 1;
+    margin: 0.5rem;
+}
+
+/* Review score styling */
+.review-score {
+    font-size: 3rem;
+    color: #f47c3c;
+}
+
+/* Review icons */
+.review-icon {
+    font-size: 2rem;
+    color: #f47c3c;
+}
+
+/* General text styling for h4 */
+h4 {
+    margin: 0.5rem 0;
+    color: #333;
+}
+
+/* General text styling for p */
+p {
+    color: #666;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    /* Adjust font sizes on medium screens */
+    .review-score {
+        font-size: 2.5rem;
+    }
+
+    .review-icon {
+        font-size: 1.5rem;
+    }
+
+    .review-box {
+        flex: 1 1 150px;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Stack review sections vertically on small screens */
+    .review-section {
+        padding: 1rem;
+        flex-direction: column;
+        margin-bottom: 3rem; /* Ensure space between sections */
+    }
+
+    .review-score {
+        font-size: 2rem;
+    }
+
+    .review-icon {
+        font-size: 1.2rem;
+    }
+
+    .review-box {
+        flex: 1 1 100%;
+        margin: 0.5rem 0;
+    }
+}
+
+/* Testimonial image and text section */
+.about_us_2 {
+ 
+    display: flex;
+    gap: 3rem;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+/* Testimonial box styling */
+.biiing {
+    text-align: center;
+    padding: 1rem;
+    flex: 1;
+    margin: 0.5rem;
+}
+
+.round {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+    /* Stack testimonials vertically on small screens */
+    .about_us_2 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .biiing {
+        flex: 1 1 100%;
+    }
+
+    .round img {
+        width: 100%;
+        height: auto;
+    }
+}

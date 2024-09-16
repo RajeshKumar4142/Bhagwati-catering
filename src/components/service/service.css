@@ -1,0 +1,60 @@
+.service_img {
+    display: flex;
+    width: 100%;
+    height: 70vh;
+    position: relative;
+    margin-top: -20vh;
+    z-index: 2;
+    flex-wrap: wrap;
+}
+.service_image {
+    background-size: cover;
+    background-position: center;
+    /* border-bottom-left-radius: 26px; */
+    flex: 1;
+    min-height: 300px;
+}
+
+.text_service {
+    background: linear-gradient(20deg, #ffc3c2, #fff8f8);
+    /* border-top-right-radius: 26px; */
+    padding: 20px;
+    flex: 1;
+}
+
+.text_service h3 {
+    font-style: italic !important;
+    font-family: "Baskervville SC", serif;
+    font-size: 30px;
+    color: #000;
+    margin-bottom: 20px;
+    margin-top: 5rem;
+}
+.service_image h3 {
+    font-style: italic !important;
+    font-family: "Baskervville SC", serif;
+    font-size: 30px;
+    color: #000;
+    margin-bottom: 20px;
+    margin-top: 6rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .service_img {
+        flex-direction: column;
+        height: auto;
+        margin-top: 0;
+    }
+
+    .service_image, .text_service {
+        flex: none;
+        width: 100%;
+        min-height: 200px;
+        margin-top: 20px;
+    }
+
+    .text_service {
+        padding: 30px;
+    }
+}

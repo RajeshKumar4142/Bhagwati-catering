@@ -1,0 +1,196 @@
+.about {
+    background: linear-gradient(20deg, #ffc60d, #ffffff);
+    height: 70vh;
+    border-bottom-left-radius: 20%;
+    border-bottom-right-radius: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 2rem;
+    position: relative; /* Allows about_img to be positioned in front */
+    z-index: 1;
+}
+
+.about h3 {
+    color: #000000;
+    text-shadow: 1px 2px 2px #fff9f9;
+    /* font-family: "Edu VIC WA NT Beginner", cursive; */
+    font-style: italic;
+    font-family: 'Oxanium';
+    font-size: 3.4rem;
+    font-weight: 500;
+}
+
+.about_text_p {
+    font-family: 'Oxanium';
+    color: #000716;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    margin-top: 1.5rem;
+    max-width: 800px;
+}
+
+/* about_img section */
+.about_img {
+    background-blend-mode: overlay;
+    background-color: #3a13e678; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 60vh;
+    background-image: url('https://images.unsplash.com/photo-1514986888952-8cd320577b68?crop=entropy&cs=srgb&fm=jpg&ixid=M3w2NDU2MzR8MHwxfHNlYXJjaHwxMnx8Y29va2luZ3xlbnwwfHx8fDE3MjQ2NDc1NDd8MA&ixlib=rb-4.0.3&q=85');
+    background-size: cover;
+    background-position: center;
+    border-radius: 26px;
+    position: relative; 
+    margin-top: -20vh; 
+    z-index: 2; 
+    /* animation: MoveUpDown 5s linear infinite; */
+}
+/* @keyframes MoveUpDown {
+    0%, 100% {
+      bottom: 0;
+    }
+    50% {
+      bottom: 100px;
+    }
+  } */
+
+.youtube_icon {
+    border-radius: 50%;
+    font-size: 4rem;
+    color: #ff0000;
+    cursor: pointer;
+}
+
+@keyframes color {
+    0% {
+      box-shadow: 0 0 0 0 #ff0000ca;
+    }
+  
+    to {
+      box-shadow: 0 0 0 22px transparent;
+    }
+  }
+  .youtube_icon{
+    border-radius: 50%;
+    animation: color 0.7s linear infinite;
+    transition: 0.6s;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .about {
+        height: auto;
+        padding: 3rem 1rem;
+        border-radius: 0;
+    }
+
+    .about h3 {
+        padding-top: 2rem;
+        font-size: 2.5rem;
+    }
+
+    .about_text_p {
+        font-size: 1rem;
+        padding: 0 1rem;
+    }
+
+    .about_img {
+        height: 40vh;
+        top: 200px;
+        
+    }
+
+    .youtube_icon {
+        font-size: 2.5rem;
+    }
+}
+
+
+.abous_section_p{
+    font-family: 'Oxanium';
+    color: #000716;
+    line-height: 1.5;
+    font-weight: 550;
+    margin-bottom: 2rem;
+}
+
+.text_h2{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 2.7rem;
+    color: #000716;
+}
+
+.p_about{
+    font-family: 'Oxanium';
+    color: #000716bc;
+    line-height: 1.5;
+    margin-bottom: 2rem;
+}
+/* Ensure container doesn't cause overflow issues */
+.container {
+    width: 100%;
+    padding: 0 1rem;
+}
+
+/* Specific handling for small screens */
+@media (max-width: 768px) {
+    .about_img {
+        height: 40vh;
+        top: 200px;
+    }
+
+    .text {
+        padding: 2rem 1rem; /* Adjust padding for better appearance on small screens */
+    }
+
+    .text_h2 {
+        font-size: 2rem; /* Slightly smaller font size */
+        margin-bottom: 4em;
+    }
+
+    .abous_section_p, .p_about {
+        font-size: 1rem; /* Ensure text size is appropriate for small screens */
+        margin-bottom: 1rem;
+    }
+}
+
+
+/* counting section */
+@import url('https://fonts.googleapis.com/css2?family=Baskervville+SC&display=swap');
+
+
+.counter-item {
+ margin-bottom: 2rem;
+  margin-left: 6.7rem;
+}
+
+.count {
+  font-family: "Baskervville SC", serif;
+  font-size: 48px;
+  font-weight: 650;
+  color: #42484b;
+}
+
+h2 {
+  font-style: italic;
+  font-size: 1rem;
+  margin-top: 0.5rem;
+  text-transform: uppercase;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .counter-section {
+    flex-direction: column;
+  }
+
+  .counter-item {
+    margin-bottom: 2rem;
+  }
+}

@@ -1,0 +1,352 @@
+/* Overall content container */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .project{
+    background: linear-gradient(360deg, #8484d324, #ffffff);
+    border-radius: 50px;
+  }
+  /* Image section styling */
+  .image_section img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+    animation: mymove 16s infinite;
+  }
+  @keyframes mymove {
+    50% {transform: rotate(180deg);}
+  }
+  /* Text section styling */
+  .text_section {
+    padding: 15px;
+  }
+  
+  .text_p {
+    font-family: "Poppins", sans-serif;
+    color: #42484b;
+  }
+  
+  .text_h2 {
+    font-family: 'Oxanium';
+    font-style: italic;
+    font-size: 2.3rem;
+  }
+ @media (max-width: 768px){
+  .text_section p{
+    font-family: "Poppins", sans-serif;
+    color: #42484b;
+    font-size: 1rem;
+    text-align: center;
+  }
+  .button_section{
+    padding: 0px 5px;
+    display: flex;
+    margin: 5px;
+  }
+ } 
+  /* Button styling */
+  .btton {
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+    text-decoration: none;
+    color: #ff6d4a;
+    letter-spacing: 5px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .btton:hover {
+    color: #423f3f;
+  }
+  
+  .icon {
+    margin-right: 10px;
+    font-size: 1.4rem;
+    font-weight: 100;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .content {
+      flex-direction: column;
+    }
+  
+    .image_section,
+    .text_section {
+      width: 100%;
+    }
+  
+    .text_section {
+      padding-top: 20px;
+    }
+  }
+  
+  /* Service section styling */
+  .service {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+  }
+  
+  .text_p_service {
+    font-family: "Poppins", sans-serif;
+    color: #42484b;
+    font-size: 1rem;
+  }
+  
+  .contact_button {
+    background-color: transparent;
+    color: #000;
+    border: 2px solid #ff0000; 
+    padding: 14px 31px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+  }
+  
+  .contact_button:hover {
+    background-color: #ed1919;
+    color: #fff; 
+    border-color: #fff; 
+  }
+  
+  /* Aligning button to the right on larger screens */
+  .service_button {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .service_button a {
+    text-decoration: none;
+  }
+  
+  @media (max-width: 768px) {
+    .service {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .service_button {
+      justify-content: center;
+      margin-top: 20px;
+    }
+  }
+  
+/* owner section */
+
+.image_section_2 img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out;
+  
+}
+.text_section_p{
+  margin-top: 10rem;
+  font-family: "sourse sans pro", sans-serif;
+  color: #000716;
+  font-size: 32px;
+}
+.Owner{
+ font-size: 17px;
+ color: #000716;
+ font-weight: 600;
+ font-family: "Montserrat", sans-serif;
+}
+.Owner_2{
+  font-size: 16px;
+  color: #000716;
+  opacity: 0.9;
+  font-weight: 500;
+  font-family: "Montserrat", sans-serif;
+ }
+
+
+ /* MENU SECTION */
+ .menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.menu_section {
+  padding: 2rem;
+  margin-top: 3rem;
+}
+
+.text_h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+
+
+.image_section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; /* Allow images to wrap to the next line */
+}
+
+.image_section_2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; /* Allow images to wrap to the next line */
+}
+
+.menu_image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px; /* Add any desired styling */
+}
+
+.border {
+  border: none; /* Add this if you want to remove the border */
+}
+
+.image_1, .image_2, .image_3, .image_4 {
+  background-blend-mode: overlay;
+  background-color: rgba(0, 0, 0, 0.49);  
+  margin: 1rem;
+  width: calc(50% - 2rem); /* Adjust width to fit two images per row */
+  height: 50vh;
+  border-radius: 10px;
+  border: 2px solid rgb(220, 216, 216);
+  background-size: cover;
+  background-position: center;
+  transition: background-color 0.4s;
+}
+
+.image_1:hover, .image_2:hover, .image_3:hover, .image_4:hover {
+  background-color: rgba(0, 0, 0, 0.144); 
+}
+
+/* Responsive adjustments */
+@media (max-width: 968px) {
+  .menu {
+    flex-direction: column;
+    
+  }
+  .contact_button_menu{
+    justify-content: center;
+  }
+  .menu_section {
+    padding: 1rem;
+    margin-top: 3rem;
+  }
+  
+  .text_h2 {
+    font-size: 3rem;
+    font-weight: bold;
+  }
+  
+  .text_p {
+    /* margin-top: 1rem; */
+    font-size: 1.4rem;
+    color: #555;
+  }
+
+  .menu_section {
+    margin-bottom: 2rem;
+    text-align: start;
+  }
+
+  .image_section  {
+    flex-direction: column;
+  }
+  .image_section_2 {
+    flex-direction: column;
+  }
+
+  .image_1, .image_2, .image_3, .image_4 {
+    width: 100%; /* Full width for small screens */
+    height: auto; /* Adjust height to fit content */
+    margin: 2rem 36; /* Add some margin for better readability */
+    display: none;
+  }
+}
+
+.list_1 li, .list_2 li {
+  position: relative;
+  margin-left: 2rem; /* Space between the dot and the text */
+  list-style: none; /* Remove default bullet points */
+}
+
+.list_1 li::before, .list_2 li::before {
+  content: ''; /* No text content, just a dot */
+  position: absolute;
+  left: -2rem; /* Adjust to align the dot properly */
+  top: 0.4rem; /* Vertically center the dot */
+  width: 20px; /* Width of the dot */
+  height: 20px; /* Height of the dot */
+  background-color: #ffdd00; /* Color of the dot */
+  border-radius: 50%; /* Make the dot circular */
+}
+
+.menu_type{
+  padding: 0 2rem;
+  color: #fff;
+}
+
+.menu_type h1 {
+  text-decoration: none;
+  color: #ffffff;
+  text-shadow: 2px 2px 4px #000000;
+  font-size: 3rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  letter-spacing: 2px;
+  font-family: "Edu VIC WA NT Beginner", cursive;
+}
+.p_type{
+  font-size: 15px;
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+  letter-spacing: 3px;
+  text-shadow: 2px 2px 4px #000000;
+}
+.p_type_2{
+  color: #fff;
+  font-size: 15px;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+.card_link {
+  font-size: 16px;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.contact_button_menu {
+  background-color: transparent;
+  color: #000;
+  border: 2px solid #ff0000; 
+  padding: 14px 31px;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.contact_button_menu:hover {
+  background-color: #ed1919;
+  color: #fff; 
+  border-color: #fff; 
+}

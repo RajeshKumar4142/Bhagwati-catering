@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Sevillana&display=swap');
+
+.image_footer{
+    padding: 0 5rem;
+    margin-top: 7rem;
+    height: 50vh;
+    background-image: url('https://img.freepik.com/free-photo/fried-meat-with-lemon-sauce_140725-3636.jpg?ga=GA1.1.325952049.1714993842&semt=ais_hybrid');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: overlay;
+    background-color: rgba(0, 0, 0, 0.664); 
+}
+@media (max-width: 768px) {
+    .footer{
+        text-align: center;
+    }
+    .image_footer{
+        padding: 0%;
+        flex-direction: column;
+        height: 100%;
+    }
+    .image_footer h1{
+        font-size: 2rem;
+    }
+  
+}
+.footer{
+   padding: 0 4rem;
+}
+.footer_text{
+   
+    margin-top: 5rem;
+    text-align: start;
+    color: #fff;
+    font-size: 48px;
+    text-transform: uppercase;
+    font-style: italic;
+    line-height: 1.2em;
+    letter-spacing: 1px;
+}
+.image_footer h1{
+    font-weight: 300;
+    color: #fffdfd;
+    font-family: "Montserrat", sans-serif;
+}
+.contact_button_footer{
+    background-color: #f50000;
+    color: white;
+    border: 2px solid #f50000; 
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 1.6rem;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+.contact_button_footer:hover{
+    background-color: transparent;
+    color: white;
+    border: 2px solid white; 
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 1.6rem;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.end{
+    border-radius: 10px;
+    margin-top: 5rem;
+    text-align: start;
+    color: #fff;
+    font-size: 1rem;
+    background: linear-gradient(360deg, #000000, #3f3e3e);
+}
+
+.col-md-3 h4{
+    margin-bottom: 1rem;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.bhagwati h4{
+    font-family: "Sevillana", cursive;
+    margin-bottom: 1rem;
+    font-weight: 100;
+    text-transform: initial;
+    /* letter-spacing: 2px; */
+    font-style: italic;
+}
+.col-md-3 p{
+    margin-bottom: 1rem;
+    color: whitesmoke;
+}
+
+.icon_heart{
+    color: red;
+    font-size: 1.5rem;
+    margin-bottom: 0.3rem;
+}
+
+/* .text_section_footer h1{
+    font-family: 'Oxanium';
+} */
+
+.text_h1_footer img{
+    width: 30%;
+    height: auto;
+    margin-right: 1rem;
+}
